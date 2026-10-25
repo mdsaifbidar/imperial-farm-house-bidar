@@ -35,6 +35,17 @@ export default function Location() {
               </dd>
             </div>
           </dl>
+
+          <a
+            href={venue.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor-hover
+            className="mt-8 inline-flex items-center gap-2 rounded-full border border-sand/30 px-6 py-3 text-sm tracking-wide text-sand hover:bg-sand/10 transition-colors"
+          >
+            Open in Google Maps
+            <span aria-hidden>↗</span>
+          </a>
         </Reveal>
 
         <Reveal delay={0.1}>
