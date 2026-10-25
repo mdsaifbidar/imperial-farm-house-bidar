@@ -5,10 +5,10 @@ export const venue = {
   tagline: "An editorial garden estate for weddings & celebrations in Bidar",
   addressLine: "Near KP News Gunalli Road, Bidar, Karnataka",
   proprietor: "Syed Babar Hussain",
-  phonePrimary: "8050918132",
+  phonePrimary: "9036741660",
   phoneSecondary: "8310504033",
   // Digits-only, with country code, for WhatsApp deep links — confirm with proprietor before launch.
-  whatsappNumber: "918050918132",
+  whatsappNumber: "919036741660",
   mapsQuery: "Imperial Farm House, KP News Gunalli Road, Bidar, Karnataka",
 };
 
