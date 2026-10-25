@@ -10,7 +10,6 @@ export const venue = {
   // Digits-only, with country code, for WhatsApp deep links — confirm with proprietor before launch.
   whatsappNumber: "919036741660",
   mapsQuery: "Imperial Farm House, KP News Gunalli Road, Bidar, Karnataka",
-  mapsUrl: "https://maps.app.goo.gl/gnov75xzEUwjsUAm7",
 };
 
 export const navLinks = [
