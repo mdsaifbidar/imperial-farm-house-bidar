@@ -55,8 +55,8 @@ export default function Gallery() {
           </SplitReveal>
           <Reveal delay={0.1}>
             <p className="mt-4 text-sand-dim">
-              Representative photography shown here — real photos of Imperial
-              Farm House will replace these once supplied.
+              Stills from a walkthrough of the estate — the pool, the rooftop
+              glass house, and the stay rooms.
             </p>
           </Reveal>
         </div>

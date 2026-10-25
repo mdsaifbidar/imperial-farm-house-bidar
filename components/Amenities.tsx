@@ -16,8 +16,9 @@ export default function Amenities() {
             Everything a celebration needs
           </SplitReveal>
           <p className="mt-4 text-sand-dim">
-            Draft figures below — confirm exact capacity, pricing and
-            inclusions with the proprietor before publishing.
+            Pulled from a walkthrough of the estate — pricing and anything
+            still marked below should be confirmed with the proprietor
+            before publishing.
           </p>
         </Reveal>
 

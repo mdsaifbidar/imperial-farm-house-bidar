@@ -20,69 +20,43 @@ export const navLinks = [
   { id: "location", label: "Location" },
 ];
 
-// Representative stock photography — swap for real photography of Imperial
-// Farm House as soon as it is supplied. Local clips live in /public/assets;
-// hotlinked ones are served directly from their CDN (no local copy needed).
+// Real stills of Imperial Farm House, pulled from the venue's own walkthrough
+// video (see public/assets/gallery/real/ and ASSET_LICENSES.md).
 export const galleryItems = [
   {
-    src: "/assets/gallery/ceremony-lawn.jpg",
-    caption: "Rows set on the lawn for a ceremony",
+    src: "/assets/gallery/real/pool-day.jpg",
+    caption: "The pool, late afternoon",
     size: "wide",
   },
   {
-    src: "/assets/gallery/floral-aisle.jpg",
-    caption: "Floral detail along the aisle",
+    src: "/assets/gallery/real/rooftop-glass-house.jpg",
+    caption: "The rooftop glass house, after dark",
     size: "tall",
   },
   {
-    src: "/assets/gallery/string-lights.jpg",
-    caption: "String lighting across the garden at dusk",
+    src: "/assets/gallery/real/master-bedroom.jpg",
+    caption: "One of the master bedrooms",
     size: "square",
   },
   {
-    src: "/assets/gallery/reception-tables.jpg",
-    caption: "Tables set for the reception",
+    src: "/assets/gallery/real/function-deck.jpg",
+    caption: "The covered deck, also set up for big functions",
     size: "square",
   },
   {
-    src: "https://images.pexels.com/photos/32179374/pexels-photo-32179374.jpeg",
-    caption: "A long table set the length of the garden",
+    src: "/assets/gallery/real/pool-night.jpg",
+    caption: "The pool deck, lit up at night",
     size: "wide",
   },
   {
-    src: "/assets/gallery/garden-night.jpg",
-    caption: "The garden after dark",
-    size: "wide",
+    src: "/assets/gallery/real/lounge.jpg",
+    caption: "The lounge",
+    size: "square",
   },
   {
-    src: "https://images.pexels.com/photos/36305352/pexels-photo-36305352.jpeg",
-    caption: "A couple, golden hour, somewhere on the lawn",
+    src: "/assets/gallery/real/big-pool.jpg",
+    caption: "The pool, evening lighting",
     size: "tall",
-  },
-  {
-    src: "/assets/gallery/cocktail-lawn.jpg",
-    caption: "Cocktail tables on the open lawn",
-    size: "square",
-  },
-  {
-    src: "https://images.pexels.com/photos/32859443/pexels-photo-32859443.jpeg",
-    caption: "Seating ready in the green of the garden",
-    size: "square",
-  },
-  {
-    src: "https://images.pexels.com/photos/38758629/pexels-photo-38758629.jpeg",
-    caption: "The first dance, outdoors at twilight",
-    size: "square",
-  },
-  {
-    src: "/assets/gallery/banquet-hall.jpg",
-    caption: "The banquet hall, ready for guests",
-    size: "tall",
-  },
-  {
-    src: "/assets/gallery/marquee-lawn.jpg",
-    caption: "A marquee set on the front lawn",
-    size: "square",
   },
 ];
 
@@ -93,28 +67,28 @@ export const cinematicClip = {
 
 export const spaces = [
   {
-    id: "lawn",
-    title: "The Front Lawn",
+    id: "pool",
+    title: "The Pool",
     description:
-      "Two acres of landscaped lawn for a baraat, a mandap, or a thousand chairs under open sky.",
-    image: "/assets/gallery/ceremony-lawn.jpg",
-    stat: "1,000 guests",
+      "A big outdoor pool with its own deck — open to guests during a stay, lit up after dark.",
+    image: "/assets/gallery/real/pool-day.jpg",
+    stat: "Big pool",
   },
   {
-    id: "hall",
-    title: "The Banquet Hall",
+    id: "rooftop",
+    title: "Rooftop Glass House",
     description:
-      "An air-conditioned hall for the reception once the sun goes down, or for the whole event during the day.",
-    image: "/assets/gallery/banquet-hall.jpg",
-    stat: "Climate controlled",
+      "A glass-walled room on the roof, open sky above and the skyline on every side — the estate's signature space.",
+    image: "/assets/gallery/real/rooftop-glass-house.jpg",
+    stat: "Beautiful view",
   },
   {
-    id: "garden",
-    title: "The Night Garden",
+    id: "function",
+    title: "The Function Deck",
     description:
-      "String lights and uplit trees carry the lawn into the evening — the estate's most photographed hour.",
-    image: "/assets/gallery/garden-night.jpg",
-    stat: "Golden hour onward",
+      "A covered, planted deck for seating and staging — also available on its own for big functions.",
+    image: "/assets/gallery/real/function-deck.jpg",
+    stat: "Also hosts big functions",
   },
 ];
 
@@ -125,17 +99,20 @@ export const stats = [
   { value: 2, suffix: "", label: "Lawns & one banquet hall" },
 ];
 
+// Pulled from the venue's own walkthrough video and its on-screen captions —
+// see public/assets/gallery/real/. Anything not shown there is still marked
+// for confirmation with the proprietor before publishing.
 export const amenities = [
-  { label: "Guest capacity", value: "Up to 1,000 guests", note: "lawn + hall combined — confirm exact figure" },
-  { label: "Banquet hall", value: "Air-conditioned indoor hall" },
-  { label: "Open lawns", value: "Landscaped front & rear lawns" },
-  { label: "Parking", value: "On-site parking for cars & buses" },
-  { label: "Catering", value: "In-house catering, multi-cuisine" },
-  { label: "Decor", value: "Mandap, stage & floral decor on request" },
-  { label: "Power backup", value: "Full-capacity generator backup" },
-  { label: "Guest rooms", value: "Rooms available for family stay" },
-  { label: "Sound & DJ", value: "In-house sound system, DJ on request" },
-  { label: "Changing rooms", value: "Separate bridal & groom suites" },
+  { label: "Swimming pool", value: "Big outdoor pool", note: "lit for evening use" },
+  { label: "Rooftop glass house", value: "Glass-walled rooftop room", note: "open skyline views" },
+  { label: "Stay accommodation", value: "Premium 3 BHK", note: "master bedrooms with attached bath" },
+  { label: "Kitchen", value: "Cooking utensils, fridge & oven" },
+  { label: "Lounge", value: "AC lounge with TV & speakers" },
+  { label: "Function deck", value: "Covered deck", note: "also available on its own for big functions" },
+  { label: "Children's play area", value: "Dedicated outdoor play area" },
+  { label: "Parking", value: "On-site parking for cars & buses", note: "confirm capacity with proprietor" },
+  { label: "Power backup", value: "Generator backup", note: "confirm with proprietor before publishing" },
+  { label: "Getting there", value: "3km from Bidar", note: "near Shahpur Gate, Gunalli Road" },
 ];
 
 export const eventTypes = [
