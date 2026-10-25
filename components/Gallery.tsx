@@ -6,9 +6,12 @@ import Reveal from "@/components/Reveal";
 import SplitReveal from "@/components/SplitReveal";
 import { galleryItems } from "@/lib/content";
 
-const sizeToSpan: Record<string, string> = {
-  wide: "sm:col-span-2 aspect-[8/5]",
-  tall: "sm:row-span-2 aspect-[4/7] sm:aspect-auto sm:h-full",
+// Aspect ratios only — no col/row spanning. The grid below is a CSS multi-
+// column masonry, so mixed-height tiles always stack cleanly within their
+// own column instead of fighting a shared grid row height.
+const sizeToAspect: Record<string, string> = {
+  wide: "aspect-[8/5]",
+  tall: "aspect-[3/4]",
   square: "aspect-[4/5]",
 };
 
@@ -61,25 +64,27 @@ export default function Gallery() {
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 auto-rows-[1fr] gap-4 md:gap-5">
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 md:gap-5">
           {galleryItems.map((item, i) => (
             <Reveal
               key={item.src}
               delay={(i % 4) * 0.08}
-              className={sizeToSpan[item.size] ?? "aspect-[4/5]"}
+              className="mb-4 md:mb-5 break-inside-avoid"
             >
               <button
                 type="button"
                 onClick={() => setActiveIndex(i)}
                 data-cursor-hover
                 aria-label={`Open photo: ${item.caption}`}
-                className="group relative block h-full w-full overflow-hidden rounded-sm"
+                className={`group relative block w-full overflow-hidden rounded-sm ${
+                  sizeToAspect[item.size] ?? "aspect-[4/5]"
+                }`}
               >
                 <Image
                   src={item.src}
                   alt={item.caption}
                   fill
-                  sizes="(min-width: 640px) 25vw, 50vw"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

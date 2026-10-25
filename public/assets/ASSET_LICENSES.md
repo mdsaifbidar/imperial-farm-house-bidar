@@ -13,10 +13,17 @@ gallery/card sizes rather than full-bleed hero size.
 - `master-bedroom.jpg` — one of the master bedrooms (venue's own caption baked in)
 - `function-deck.jpg` — the covered deck used for big functions (venue's own caption baked in)
 - `lounge.jpg` — the indoor lounge
+- `tv-lounge.jpg` — a second lounge, with TV & speakers
+- `play-area.jpg` — the children's play area (venue's own caption baked in)
+- `courtyard-night.jpg` — the courtyard, lit for the evening (venue's own "3 BHK" caption baked in)
+- `rooftop-dining.jpg` — seating on the rooftop at dusk (venue's own "Beautiful view" caption baked in)
+- `bedroom-two.jpg` — a second bedroom (venue's own "MASTER" caption baked in)
+- `signage.jpg` — the Danish Group entrance signage, used in the "Since 1985" story section
 
 Used in `lib/content.ts` (`spaces`, `galleryItems`) and the `amenities` list, which was
 transcribed from this same video's on-screen captions (pool, rooftop glass house, 3 BHK
-stay, kitchen appliances, children's play area, function deck).
+stay, kitchen appliances, children's play area, function deck). `signage.jpg` is also used
+directly in `components/Story.tsx`.
 
 ## Stock placeholders — remaining assets
 

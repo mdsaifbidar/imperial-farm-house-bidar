@@ -39,6 +39,11 @@ export const galleryItems = [
     size: "square",
   },
   {
+    src: "/assets/gallery/real/courtyard-night.jpg",
+    caption: "The courtyard, lit for the evening",
+    size: "square",
+  },
+  {
     src: "/assets/gallery/real/function-deck.jpg",
     caption: "The covered deck, also set up for big functions",
     size: "square",
@@ -49,8 +54,28 @@ export const galleryItems = [
     size: "wide",
   },
   {
+    src: "/assets/gallery/real/tv-lounge.jpg",
+    caption: "A second lounge, with TV & speakers",
+    size: "tall",
+  },
+  {
+    src: "/assets/gallery/real/play-area.jpg",
+    caption: "The children's play area",
+    size: "square",
+  },
+  {
     src: "/assets/gallery/real/lounge.jpg",
     caption: "The lounge",
+    size: "square",
+  },
+  {
+    src: "/assets/gallery/real/rooftop-dining.jpg",
+    caption: "Seating on the rooftop at dusk",
+    size: "wide",
+  },
+  {
+    src: "/assets/gallery/real/bedroom-two.jpg",
+    caption: "A second bedroom",
     size: "square",
   },
   {

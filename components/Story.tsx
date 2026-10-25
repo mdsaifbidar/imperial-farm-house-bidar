@@ -54,8 +54,8 @@ export default function Story() {
           className="relative aspect-[4/5] overflow-hidden rounded-sm order-1 lg:order-none"
         >
           <Image
-            src="/assets/gallery/floral-aisle.jpg"
-            alt="Floral detail along the aisle at Imperial Farm House"
+            src="/assets/gallery/real/signage.jpg"
+            alt="The Danish Group signage at the entrance of Imperial Farm House"
             fill
             sizes="(min-width: 1024px) 45vw, 100vw"
             className="object-cover"
